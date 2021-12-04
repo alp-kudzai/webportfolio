@@ -2,6 +2,8 @@ import './App.css';
 import { useDispatch, useSelector } from "react-redux"
 import { createStore } from 'redux'
 import { CSSTransition } from "react-transition-group"
+import { useState } from 'react'
+import klogo from './klogo.svg'
 
 const intialState = {
   cellCount: 4,
@@ -156,7 +158,9 @@ const NavBar = () => {
   return (
       <div id='navBar'>
                <ul id='navList'>
-                  <li>Logo</li>
+                  <li>
+                      <img id='mylogo' width='128' height='128' src={klogo} alt='klogo' id='klogo' onClick={handleAbout}/>
+                  </li>
                   <li>
                       <button onClick={handleAbout} id='Babout'>About</button>
                   </li>
@@ -196,14 +200,26 @@ const About = () => {
 
 const BestWork = () => {
   //code something that selects BestWork from the document, creates a variable for cube cell count, and then an index variable
-
+  const [inBestWork, setInBestWork] = useState(true)
   let dispatch = useDispatch()
   let state = useSelector(state => state)
+//   if (state.currentPage == 'about'){
+//       setInBestWork(true)
+//   }
+
   let handleNext = () => {
-      dispatch(nextWork)
+      setInBestWork(false)
+      setTimeout(() => {
+        dispatch(nextWork)
+        setInBestWork(true)
+      }, 800)
   }
   let handlePrev = () => {
-      dispatch(prevWork)
+      setInBestWork(false)
+      setTimeout(() => {
+        dispatch(prevWork)
+        setInBestWork(true)
+      }, 800)
   }
   let styles = {
       transform: `translateZ(-${BESTWORK_Z}px) rotateY(${state.angle}deg)`
@@ -222,9 +238,13 @@ const BestWork = () => {
           <div id='buttonWrapper'>
               <button className='previous-button' onClick={handlePrev}>&lt;</button>
               <CSSTransition
-                  className='fade'
+                  in={inBestWork}
+                  timeout={500}
+                  classNames='fade'
+                  mountOnEnter
+                  unmountOnExit
                   >
-                      <a id='bestWork-link' key='animateLink' href={state.bestWorkLinks[state.workIndex]}>{state.bestWorkCurrent}</a>
+                      <a id='bestWork-link' target='_blank' key='animateLink' href={state.bestWorkLinks[state.workIndex]}>{state.bestWorkCurrent}</a>
               </CSSTransition>
               <button className='next-button' onClick={handleNext}>&gt;</button>
           </div>

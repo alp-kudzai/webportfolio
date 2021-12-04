@@ -36,6 +36,11 @@ li {
   list-style: none;
 }
 
+a {
+  text-decoration: none;
+  color: var(--text-color);
+}
+
 button {
   font-family: 'Major Mono Display';
   font-size: 1.5rem;
@@ -75,7 +80,13 @@ button {
   margin: 0px;
   background-color: black;
   z-index: 1;
+  border-bottom: #824C71 inset 1px;
 }
+
+#mylogo {
+  margin-top: 10px;
+}
+
 #navList {
   display: flex;
   flex-direction: row;
@@ -176,34 +187,27 @@ to {
 }
 } */
 
-/* #bestWork-link  {
+#bestWork-link  {
   text-decoration: none;
+  position:absolute;
   color: var(--text-color);
-  animation-duration: 5s;
-  animation-name: slidein;
-  animation-iteration-count: 1;
   transition: all 1s;
   z-index: 1;
+
 }
-#bestWork-link:active{
-  animation-duration: 3s;
-  animation-name: slidein;
-  animation-iteration-count: 1;
-  transition: all 1s;
-} */
 .fade-enter {
   opacity: 0;
 }
-.fade-enter.fade-enter-active {
+.fade-enter-active {
   opacity: 1;
-  transition: opacity 1.5s ease-in;
+  transition: opacity 1s ease-in;
 }
-.fade-leave {
+.fade-exit {
   opacity: 1;
 }
-.fade-leave.fade-leave-active {
+.fade-exit-active {
   opacity: 0;
-  transition: opacity 1.5s ease-in;
+  transition: opacity 1s ease-in;
 }
 
 /*shake animation when bestWork-link hover*/
@@ -242,7 +246,7 @@ to {
 
 /* Change scene width, height. OG: 210px 140px */
 .scene {
-border: 2px ridge #ca432a;
+border: 1.15px inset #824C71;
 border-radius: 5px;
 position: relative;
 width: 730px;
@@ -256,7 +260,7 @@ perspective: var(--bestWork-perspective);
   flex-direction: row;
   align-items: center;
   justify-content: center;
-width: 100%;
+  width: 100%;
   height: 100%;
   position: absolute;
   transform: translateZ(-(var(--bestWork-translateZ)));/*negative number*/
@@ -265,13 +269,13 @@ width: 100%;
 }
 
 .cube-cell {
-  border: 2px inset #ca432a;
+  /* border: 2px inset #ca432a; */
   backface-visibility: hidden;
   transform-style: preserve-3d;
   transition: transform 1s;
-position: absolute;
-width: 660px;
-height: 289px;
+  position: absolute;
+  width: 660px;
+  height: 289px;
   border-radius: 5px;
 }
 
@@ -305,4 +309,22 @@ height: 289px;
   width: 100%;
   padding: 1px;
   margin: 0px;
+}
+
+.workItem {
+  display: flex;
+  flex-direction: column;
+  border: 1px inset #824C71;
+  border-radius: 5px;
+  align-items: center;
+  justify-content: center;
+  width: 659px;
+  padding: 1px;
+  margin-bottom: 20px;
+  gap: 5px;
+  background-color: var(--background-color);
+}
+
+.proj-image {
+  border-radius: 5px;
 }
