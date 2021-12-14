@@ -15,7 +15,7 @@
     "redux": "^4.1.2",
     "web-vitals": "^1.1.2"
   },
-  "homepage": "https://alp-kudzai.github.io/webportfolio",
+  "homepage": "https://alp-kudzai.github.io/webportfolio.git",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
