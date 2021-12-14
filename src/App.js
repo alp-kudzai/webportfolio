@@ -4,6 +4,15 @@ import { createStore } from 'redux'
 import { CSSTransition } from "react-transition-group"
 import { useState } from 'react'
 import klogo from './klogo.svg'
+import phone from './phone.png'
+import emailImg from './email.png'
+import github from './github.png'
+import twitter from './twitter.png'
+import linkedin from './linkedin.png'
+import locationIcon from './location-pin.png'
+import star4 from './s4.png'
+import star3 from './s3.png'
+
 
 const intialState = {
   cellCount: 4,
@@ -164,7 +173,7 @@ const NavBar = () => {
 let glowStyle = {
   color: '#cdcde1',
   textShadow: '0 0 7px #cdcde1, 0 0 10px #cdcde1, 0 0 21px #cdcde1, 0 0 42px rgba(97, 146, 93, 1), 0 0 82px rgba(97, 146, 93, 1), 0 0 92px rgba(97, 146, 93, 1), 0 0 102px rgba(97, 146, 93, 1), 0 0 151px rgba(97, 146, 93, 1)',
-  animation: 'flicker 15s ease infinite alternate',
+  animation: 'flicker 10s linear infinite alternate',
 }
   const navGlow = (state, page) => {
     switch(state.currentPage){
@@ -201,19 +210,33 @@ let glowStyle = {
 const About = () => {
   return(
       <div id='about'>
-          <h1 id='intro'>
-              Hello, I'm Kudzai. 
-          </h1>
-          <h3 id='aspire'>Aspiring Web Developer</h3>
-          <div id='aboutMe'>
-              <p>
-              It gives me satisfaction to put what I have learnt into practice and see the result of my work. I am a self taught programmer, and my passion for computer technology came from growing up with a PC in our home. Through games I got hooked. Currently I am working on my portfolio and I am looking forward to learning more about the technologies.
-              </p>
-              <p>
-              I would like to gain experience in team centered web development because it is my belief that working with more skilled individuals strengthens the weak link. My greatest asset is the ability to learn, and I have acquired other skills such as acoustic and bass guitar. I am not perfect in being self taught, there are pitfalls one cannot forsee, but I am willing to course-correct and grow.
-              I am generally a reserved person, bordering on awkward but I warm up to people easly. Some of my interests include Formula One, Exercising, a good book, and a good coffee.
-              </p>
-          </div>
+            <h1 id='intro'>
+                Hello, I'm Kudzai. 
+            </h1>
+            <h3 id='aspire'>Aspiring Web Developer</h3>
+            <div id='aboutMe'>
+                <p>
+                It gives me satisfaction to put what I have learnt into practice and see the result of my work. I am a self taught programmer, and my passion for computer technology came from growing up with a PC in our home. Through games I got hooked. Currently I am working on my portfolio and I am looking forward to learning more about web technologies.
+                </p>
+                <p>
+                I would like to gain experience in team centered web development because it is my belief that working with more skilled individuals strengthens the weak link. My greatest asset is the ability to learn, and I have acquired other skills such as acoustic and bass guitar. I am not perfect in being self taught, there are pitfalls one cannot forsee, but I am willing to course-correct and grow.
+                I am generally a reserved person, bordering on awkward but I warm up to people easly. Some of my interests include Formula One, a good book and a good coffee.
+                </p>
+            </div>
+            <div id='about-reachout'>
+                <h4>You can reach out on any of the platforms below and see other work on Githhub.</h4>
+                <div id='about-socials'>
+                    <a href='https://github.com/alp-kudzai'>
+                        <img className='icon-link' alt='' width='40px' height='40px' src={github}/>
+                    </a>
+                    <a href='https://twitter.com/KudzaiAlpha'>
+                        <img className='icon-link' alt='' width='40px' height='40px' src={twitter}/>
+                    </a>
+                    <a href='https://www.linkedin.com/in/kudzai-matsika-117698182/'>
+                        <img className='icon-link' alt='' width='40px' height='40px' src={linkedin}/>
+                    </a>
+                </div>
+            </div>
       </div>
       )
 }
@@ -281,7 +304,7 @@ const Work = () => {
               <div className='workItem-text'>
                   <h3><a target='_blank' rel='noreferrer' id='workItem-link' href='https://codepen.io/alp-kudzai/pen/eYRLxQL'>Quote Machine</a></h3>
               </div>
-              <div className='workItem-description'>My site made using React. It was a challenge grasping Class Components, but it passed all the Free Code Camp tests, I was proud of myself at in that moment.</div>
+              <div className='workItem-description'>My site made using React. It was a challenge grasping Class Components.</div>
           </div>
           <div className='workItem'>
               {/* Drum Machine */}
@@ -289,7 +312,7 @@ const Work = () => {
               <div className='workItem-text'>
                   <h3><a target='_blank' rel='noreferrer' id='workItem-link' href='https://codepen.io/alp-kudzai/pen/LYjVjab'>Drum Machine</a></h3>
               </div> 
-              <div className='workItem-description'>This site was difficult to get passed. The Free Code Camp test required that you use an inline audio tag tag while I had use a function to create the necessary tags. It took me a while to realise the issue, but I learnt a lot from this site. It was also when I switched to using functional React rather than Classes.</div>
+              <div className='workItem-description'>This site was difficult to get passed. The Free Code Camp test required that you use an inline audio tag tag while I had used a function to create the necessary tags. It took me a while to realise the issue, but I learnt a lot from this site. It was also when I switched to using functional React rather than Classes.</div>
           </div>
           <div className='workItem'>
               {/* Tribute page   */}
@@ -323,72 +346,72 @@ const Resume = () => {
   return (
         <div id='resume'>
             <div id='resume-side'>
-                    <div id='resume-side-header'>
-                        <h2>Kudzai Matsika</h2>
-                        <h3>Aspiring Web Developer</h3>
-                    </div>
-                    <div id='personal-info'>
-                        <div id='personal-info-text'>
-                            <h3 id='#'>Personal Information</h3>
-                            <div id='location'>
-                                <h5>Location</h5>
-                                <p>Johannesburg, South Africa</p>
-                            </div>
-                        </div>
-                        <div id='contact-info'>
-                            <h3>Contact Information</h3>
-                            <div id='contact'>
-                                <h5>Phone Number</h5>
-                                <p>+27 81 526 3026</p>
-                                <h5>Email</h5>
-                                <p>alpha.kudzai@gmail.com</p>
-                                
-                                <p>
-                                <a id='resume-link' rel='noreferrer' target='_blank' href='https://www.linkedin.com/in/kudzai-matsika-117698182/'><h5>LinkedIn</h5></a>
-                                </p>
-                                <p>
-                                <a id='resume-link' rel='noreferrer' target='_blank' href='https://github.com/alp-kudzai'><h5>GitHub</h5></a>
-                                </p>
-                                <p>
-                                <a id='resume-link' rel='noreferrer' target='_blank' href='https://twitter.com/KudzaiAlpha'><h5>Twitter</h5></a>
-                                </p>
-                            </div>
-                        </div>
-                        <div id='resume-skills'>
-                            <h3>Hard Skills</h3>
-                            <div id='hardSkills-text'>
-                            <ul id='resume-list'>
-                                <li>HTML</li>
-                                <li>CSS</li>
-                                <li>JavaScript</li>
-                                <li>Python</li>
-                            </ul>
-                            </div>
-                            <h3>Soft Skills</h3>
-                            <div id='softSkills-text'>
-                            <ul id='resume-list'>
-                                <li>Teamwork</li>
-                                <li>Problem Solving</li>
-                                <li>Adaptability</li>
-                                <li>Integrity</li>
-                                <li>Coachability</li>
-                            </ul>
-                            </div>
-                        </div>
-                    </div>
-            </div>
-            <div id='resume-main'>
+                <div id='resume-side-header'>
+                    <h2>Kudzai Matsika</h2>
+                    <h3>Aspiring Web Developer</h3>
+                </div>
                 <div id='resume-education'>
                     <h3>Education</h3>
                     <div id='education-text'>
-                        <div>
-                        <h4>2014-2016 University of Pretoria</h4>
-                        <p>Bachelors in Political Sciences</p>
-                        <h4>2018-2019 University of South Africa</h4>
-                        <p>Bachelors in Politics Philosophy and Economics</p>
+                            <h4>2014-2016 University of Pretoria</h4>
+                            <p>Bachelors in Political Sciences</p>
+                            <h4>2018-2019 University of South Africa</h4>
+                            <p>Bachelors in Politics Philosophy and Economics</p>
+                    </div>
+                </div>
+                <div id='personal-info'>
+                    <div id='location'>
+                        <img alt='' src={locationIcon} width='40px' height='40px'/>
+                        <p>Johannesburg, South Africa</p>
+                    </div>
+                    <div id='contact-info'>
+                        <div id='contact'>
+                            <div id='phone-num'>
+                                <img alt='' src={phone} width='40px' height='40px'/>
+                                <p>+27 81 526 3026</p>
+                            </div>
+                            <div id='email-info'>
+                                <img alt='' src={emailImg} width='40px' height='40px'/>
+                                <p>alpha.kudzai@gmail.com</p>
+                            </div>
+                            <div id='social-media'>
+                                <a className='resume-link' rel='noreferrer' target='_blank' href='https://www.linkedin.com/in/kudzai-matsika-117698182/'>
+                                    <img className='icon-link' alt='' src={linkedin} width='40px' height='40px'/>
+                                </a>
+                                <a className='resume-link' rel='noreferrer' target='_blank' href='https://github.com/alp-kudzai'>
+                                    <img className='icon-link' alt='' src={github} width='40px' height='40px'/>
+                                </a>
+                                <a className='resume-link' rel='noreferrer' target='_blank' href='https://twitter.com/KudzaiAlpha'>
+                                    <img className='icon-link' alt='' src={twitter} width='40px' height='40px'/>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
+                <div id='resume-skills'>
+                    <h3>Hard Skills</h3>
+                    <div id='hardSkills-text'>
+                    <ul id='resume-list'>
+                        <li>HTML   <img alt='rating' src={star4} width='51px' height='10px'/></li>
+                        <li>CSS   <img alt='rating' src={star3} width='51px' height='10px'/></li>
+                        <li>JavaScript   <img alt='rating' src={star3} width='51px' height='10px'/></li>
+                        <li>Python   <img alt='rating' src={star3} width='51px' height='10px'/></li>
+                    </ul>
+                    </div>
+                    <h3>Soft Skills</h3>
+                    <div id='softSkills-text'>
+                    <ul id='resume-list'>
+                        <li>Teamwork</li>
+                        <li>Problem Solving</li>
+                        <li>Adaptability</li>
+                        <li>Integrity</li>
+                        <li>Coachability</li>
+                    </ul>
+                    </div>
+                </div>
+            </div>
+            <div id='resume-main'>
+                
                 <div id='resume-workExp'>
                     <h3>Work Experience</h3>
                     <div id='resume-chrono'>
@@ -400,10 +423,10 @@ const Resume = () => {
                         </ul>
                         <h4>2018-2019</h4>
                         <ul id='resume-list'>
-                            <li>Worked as a general assistant for my mother's (Nyasha Mapira) Environmental, Health and Safety business, Simeka SHEQ.</li>
+                            <li>Worked as an assistant for an Environmental, Health and Safety business, Simeka SHEQ.</li>
                             <li>I proof read various reports including EIAs and BAR when doing enivonmental work</li>
                             <li>Wrote up, and followed up on the mandated adverts for the newspapers needed for Public Participation in the communities where we were doing work.</li>
-                            <li>I also worked with my mother in her Agricultural and Poultry business, were I cleaned the coupes and feed the chickens during the growing phase and lastly I did the slaughtering and dressing of the poultry.</li>
+                            <li>I also worked in the Agricultural and Poultry business owned by the founder of Simeka SHEQ, were I cleaned the coupes and feed the chickens during the growing phase and lastly I did the slaughtering and dressing of the poultry.</li>
                         </ul>
                     </div>
                     </div>

@@ -16,31 +16,35 @@
   --accent-red: rgba(191, 63, 63, 1);
 
 }
-/* convert --accent-green to rgba */
+a {
+  text-decoration: none;
+}
+button {
+  font-family: 'Major Mono Display';
+  font-size: 1.5rem;
+  border: none;
+  border-radius: 7px;
+  background-color: transparent;
+  color: var(--text-color);
+}
+/* Scrollbars */
 
 body::-webkit-scrollbar, #pageCell::-webkit-scrollbar {
   width: 0.20rem;
   border-radius: 5px;
 }
-body::-webkit-scrollbar-track, #pageCell::-webkit-scrollbar{
+body::-webkit-scrollbar-track, #pageCell::-webkit-scrollbar, #about::-webkit-scrollbar{
   background-color: black;
   border-radius: 5px;
 }
-body::-webkit-scrollbar-thumb, #pageCell::-webkit-scrollbar{
+body::-webkit-scrollbar-thumb, #pageCell::-webkit-scrollbar-thumb, #about::-webkit-scrollbar-thumb{
   background-color: plum;
 }
-body::-webkit-scrollbar-thumb:hover, #pageCell::-webkit-scrollbar{
+body::-webkit-scrollbar-thumb:hover, #pageCell::-webkit-scrollbar-thumb:hover, #about::-webkit-scrollbar-thumb:hover{
   background-color: #cdcde1;
 }
-@media only screen and (min-width: 480px) {
-}
-@media only screen and (min-width: 600px) {
-}
-@media only screen and (min-width: 768px) {
-}
-@media only screen and (min-width: 992px) {
+/* Scrollbars */
 
-}
 @media only screen and (max-width: 1360px) {
 
   #about {
@@ -50,7 +54,7 @@ body::-webkit-scrollbar-thumb:hover, #pageCell::-webkit-scrollbar{
   }
   
 }
-
+/* Base Containers */
 #root {
   height: 100%;
   width: 100%;
@@ -70,28 +74,6 @@ body{
   margin: 0px;
   overflow-x: hidden;
 }
-#navList {
-  list-style: none;
-}
-
-a {
-  text-decoration: none;
-}
-
-button {
-  font-family: 'Major Mono Display';
-  font-size: 1.5rem;
-  border: none;
-  border-radius: 7px;
-  background-color: transparent;
-  color: var(--text-color);
-}
-
-.previous-button .next-button {
-  background-color: transparent;
-  color: var(--text-color);
-}
-
 #contentWrapper {
   display: flex;
   flex-direction: row;
@@ -103,28 +85,9 @@ button {
   padding: 0px;
   margin: 0px;
 }
+/* Base Containers */
 
-/* @keyframes bgChange {
-	0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
-} */
-
-@keyframes flicker {
-  0%, 18%, 22%, 25%, 53%, 57%, 100%{
-    text-shadow: 0 0 7px #cdcde1, 0 0 10px #cdcde1, 0 0 21px #cdcde1, 0 0 42px rgba(97, 146, 93, 1), 0 0 82px rgba(97, 146, 93, 1), 0 0 92px rgba(97, 146, 93, 1), 0 0 102px rgba(97, 146, 93, 1), 0 0 151px rgba(97, 146, 93, 1);
-  }
-  20%, 24%, 55% {
-    text-shadow: none;
-  }
-}
-
+/* Navbar */
 #navBar {
   position: fixed;
   top: 0px;
@@ -141,14 +104,12 @@ button {
   background-color: black;
   z-index: 1;
   border-bottom: var(--accent-green) inset 0.5px;
-  box-shadow: 0 0 7px rgba(97, 146, 93, 0.7), 0 0 10px rgba(97, 146, 93, 0.4), 0 0 21px rgba(97, 146, 93, 0.3);
+  box-shadow: 0 0 7px rgba(97, 146, 93, 0.9), 0 0 10px rgba(97, 146, 93, 0.4), 0 0 21px rgba(97, 146, 93, 0.3);
   color: var(--text-color);
 }
-
 #mylogo {
   margin-top: 10px;
 }
-
 #navList {
   display: flex;
   flex-direction: row;
@@ -158,7 +119,12 @@ button {
   padding: 1px;
   margin: 0px;
 }
+#navList {
+  list-style: none;
+}
+/* Navbar */
 
+/* Layout for the Page Cube */
 #pageScene {
   /* font-size: 1.5rem; */
   position: relative;
@@ -215,8 +181,9 @@ button {
 #pageCell:nth-child(4) {
   transform: rotateX(270deg) translateZ(var(--page-translateZ));
 }
+/* Layout for the Page Cube */
 
-
+/* About Face */
 #about{
   overflow-x: hidden;
   text-align: justify;
@@ -230,10 +197,37 @@ button {
   height: 100%;
   padding: 10px;
   gap: 2%;
-  
   background-color: var(--background-color);
 }
 
+#intro{
+  text-shadow: 0 1px 7px #cdcde1;
+  border-bottom: 1px ridge var(--accent-red);
+  border-radius: 5px;
+  box-shadow: 0 9px 7px -7px rgba(191, 63, 63, 0.8), 0 12px 10px -10px rgba(191, 63, 63, 0.6), 0 23px 21px -21px rgba(191, 63, 63, 0.4);
+}
+#aboutMe{
+  width: 75%;
+}
+#aspire{
+  text-shadow: 0 0 7px #cdcde1;
+}
+#about-reachout {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#about-social {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+/* About Face */
+
+/* BestWork Face */
 #bestWork {
   backface-visibility: hidden;
   display: flex;
@@ -245,92 +239,6 @@ button {
   justify-content: center;
   background-color: var(--background-color);
 }
-
-#bestWork-link  {
-  backface-visibility: hidden;
-  text-decoration: none;
-  position:absolute;
-  color: var(--text-color);
-  transition: all 1s;
-  z-index: 1;
-
-}
-.fade-enter {
-  opacity: 0;
-}
-.fade-enter-active {
-  opacity: 1;
-  transition: opacity 1s ease-in;
-}
-.fade-exit {
-  opacity: 1;
-}
-.fade-exit-active {
-  opacity: 0;
-  transition: opacity 1s ease-in;
-}
-
-/*shake animation when bestWork-link hover*/
-#bestWork-link:hover {
-  transform: scale3d(1.05, 1.05, 1.05);
-}
-
-#work {
-  overflow-y: scroll;
-  backface-visibility: hidden;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  perspective: 1000px;
-  width: 100%;
-  height: 100%;
-  transition: all ease 1s;
-  align-items: center;
-  justify-content: space-evenly;
-  background-color: var(--background-color);
-  padding: 5%;
-}
-
-#work::-webkit-scrollbar{
-  width: 0.20rem;
-  border-radius: 5px;
-}
-
-#resume {
-  background-color: black;
-  backface-visibility: hidden;
-  display: flex;
-  flex-direction: row;
-  /*make this div appear below the navbar that is z-indexed to 1 and has position set to fixed*/
-  width: 100%;
-  height: 100vh;
-  align-items: flex-start;
-  justify-content: center;
-  background-color: var(--background-color);
-  /* gap: 5px; */
-  transform: scale(0.95);
-}
-#resume-side{
-  display: flex;
-  flex-direction: column;
-  width: 25%;
-  min-height: 100vh;
-  align-items: left;
-  /* justify-content: top; */
-  padding: 2% 2% 2% 2%;
-  
-}
-#resume-main{
-  display: flex;
-  flex-direction: column;
-  width: 75%;
-  height: stretch;
-  justify-content: center;
-  align-items: left;
-  padding: 2% 2% 2% 2%;
-  /* border-left: 1px inset var(--accent-green); */
-}
-
 
 /* Change scene width, height. OG: 210px 140px */
 .scene {
@@ -383,15 +291,19 @@ button {
   top: 0px;
   /* transition: all ease-in-out 0.5s; */
 }
-/* #proj:hover{
-  transform: scale3d(1.01, 1.01, 1.01);
-} */
 
-/* .cube-cell:nth-child(4n+1) { background: hsla(  80, 100%, 50%, 0.8); }
-.cube-cell:nth-child(4n+2) { background: hsla( 40, 100%, 50%, 0.8); }
-.cube-cell:nth-child(4n+3) { background: hsla( 0, 100%, 50%, 0.8); }
-.cube-cell:nth-child(4n+4) { background: hsla(160, 100%, 50%, 0.8); } */
+#bestWork-link  {
+  backface-visibility: hidden;
+  text-decoration: none;
+  position:absolute;
+  color: var(--text-color);
+  transition: all 0.5s;
+  z-index: 1;
 
+}
+#bestWork-link:hover {
+  text-shadow: 0 0 7px #cdcde1;
+}
 .cube-cell:nth-child(1) { transform: rotateY(  0deg) translateZ(var(--bestWork-translateZ)); }
 .cube-cell:nth-child(2) { transform: rotateY( 90deg) translateZ(var(--bestWork-translateZ)); }
 .cube-cell:nth-child(3) { transform: rotateY( 180deg) translateZ(var(--bestWork-translateZ)); }
@@ -406,25 +318,33 @@ button {
   padding: 1px;
   margin: 0px;
 }
-/* Make the div increase its own height to create smooth animation effect */
-@keyframes fadeDtext {
-  0% {
-    /* display: none;
-    visibility: hidden; */
-    opacity: 0;
-    height: 0;
-    overflow: hidden;
-  }
-  100% {
-    /* display: flex;
-    visibility: visible; */
-    height: 20vh;
-    opacity: 1;
-    overflow: visible;
-  }
+.previous-button .next-button {
+  background-color: transparent;
+  color: var(--text-color);
+}
+/* BestWork Face */
+
+/* Work Face */
+#work {
+  overflow-y: scroll;
+  backface-visibility: hidden;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  perspective: 1000px;
+  width: 100%;
+  height: 100%;
+  transition: all ease 1s;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: var(--background-color);
+  padding: 5%;
 }
 
-
+#work::-webkit-scrollbar{
+  width: 0.20rem;
+  border-radius: 5px;
+}
 .workItem {
   display: flex;
   flex-direction: column;
@@ -463,11 +383,110 @@ button {
 
 #workItem-link {
   color: #cdcde1;
-  /* text-shadow: 0 0 7px #cdcde1; */
+  transition: all ease-in-out 0.5s;
+}
+#workItem-link:hover {
+  text-shadow: 0 0 7px #cdcde1;
 }
 
 .proj-image {
   border-radius: 5px;
 }
+/* Work Face */
 
+/* Resume Face */
+#resume {
+  background-color: black;
+  backface-visibility: hidden;
+  display: flex;
+  flex-direction: row;
+  /*make this div appear below the navbar that is z-indexed to 1 and has position set to fixed*/
+  width: 100%;
+  height: 100vh;
+  align-items: flex-start;
+  justify-content: center;
+  background-color: var(--background-color);
+  /* gap: 5px; */
+  transform: scale(0.95);
+  text-align: justify;
+}
+#resume-side{
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+  min-height: 100vh;
+  align-items: left;
+  justify-content: left;
+  padding: 2% 2% 2% 2%;
+}
+#resume-side-header, #resume-education, #personal-info{
+  border-bottom: 1px inset var(--accent-red);
+}
+#phone-num, #email-info, #social-media, #location{
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  gap: 2%;
+}
+.icon-link{
+  transition: all linear 200ms;
+}
+.icon-link:hover{
+  width:55px;
+  height: 55px;
+}
+#resume-main{
+  display: flex;
+  flex-direction: column;
+  width: 75%;
+  height: stretch;
+  justify-content: center;
+  align-items: left;
+  padding: 2% 2% 2% 2%;
+  /* border-left: 1px inset var(--accent-green); */
+}
+/* Resume Face */
 
+/* ANIMATIONS */
+  /* Nav bar flicker */
+@keyframes flicker {
+  0%, 18%, 22%, 25%, 53%, 57%, 100%{
+    text-shadow: 0 0 7px #cdcde1, 0 0 10px #cdcde1, 0 0 21px #cdcde1, 0 0 42px rgba(97, 146, 93, 1), 0 0 82px rgba(97, 146, 93, 1), 0 0 92px rgba(97, 146, 93, 1), 0 0 102px rgba(97, 146, 93, 1), 0 0 151px rgba(97, 146, 93, 1);
+  }
+  20%, 24%, 55% {
+    text-shadow: none;
+  }
+}
+  /* BestWork Face fade link text before rotation */
+.fade-enter {
+  opacity: 0;
+}
+.fade-enter-active {
+  opacity: 1;
+  transition: opacity 1s ease-in;
+}
+.fade-exit {
+  opacity: 1;
+}
+.fade-exit-active {
+  opacity: 0;
+  transition: opacity 1s ease-in;
+}
+  /* Work Face expand border to show hidden text */
+@keyframes fadeDtext {
+  0% {
+    /* display: none;
+    visibility: hidden; */
+    opacity: 0;
+    height: 0;
+    overflow: hidden;
+  }
+  100% {
+    /* display: flex;
+    visibility: visible; */
+    height: 20vh;
+    opacity: 1;
+    overflow: visible;
+  }
+}
+/* ANIMATIONS */
