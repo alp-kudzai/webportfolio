@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/webportfolio/static/css/main.ff46bac1.chunk.css",
-    "main.js": "/webportfolio/static/js/main.bb4b0adf.chunk.js",
-    "main.js.map": "/webportfolio/static/js/main.bb4b0adf.chunk.js.map",
+    "main.css": "/webportfolio/static/css/main.063cf7a2.chunk.css",
+    "main.js": "/webportfolio/static/js/main.e2865408.chunk.js",
+    "main.js.map": "/webportfolio/static/js/main.e2865408.chunk.js.map",
     "runtime-main.js": "/webportfolio/static/js/runtime-main.75357983.js",
     "runtime-main.js.map": "/webportfolio/static/js/runtime-main.75357983.js.map",
     "static/js/2.273e6699.chunk.js": "/webportfolio/static/js/2.273e6699.chunk.js",
@@ -10,18 +10,27 @@
     "static/js/3.81eb1588.chunk.js": "/webportfolio/static/js/3.81eb1588.chunk.js",
     "static/js/3.81eb1588.chunk.js.map": "/webportfolio/static/js/3.81eb1588.chunk.js.map",
     "index.html": "/webportfolio/index.html",
-    "static/css/main.ff46bac1.chunk.css.map": "/webportfolio/static/css/main.ff46bac1.chunk.css.map",
+    "static/css/main.063cf7a2.chunk.css.map": "/webportfolio/static/css/main.063cf7a2.chunk.css.map",
     "static/js/2.273e6699.chunk.js.LICENSE.txt": "/webportfolio/static/js/2.273e6699.chunk.js.LICENSE.txt",
+    "static/media/drummachine.22e1e8d7.jpg": "/webportfolio/static/media/drummachine.22e1e8d7.jpg",
     "static/media/github.44eee0c4.png": "/webportfolio/static/media/github.44eee0c4.png",
     "static/media/klogo.75c40a35.svg": "/webportfolio/static/media/klogo.75c40a35.svg",
     "static/media/location-pin.4b24287c.png": "/webportfolio/static/media/location-pin.4b24287c.png",
+    "static/media/markdown.fc216a1b.jpg": "/webportfolio/static/media/markdown.fc216a1b.jpg",
     "static/media/phone.9cd037e2.png": "/webportfolio/static/media/phone.9cd037e2.png",
+    "static/media/portfoliosite.82280f7f.jpg": "/webportfolio/static/media/portfoliosite.82280f7f.jpg",
+    "static/media/productpage.48f890b1.jpg": "/webportfolio/static/media/productpage.48f890b1.jpg",
+    "static/media/quotemachine.202423ba.jpg": "/webportfolio/static/media/quotemachine.202423ba.jpg",
+    "static/media/surveyform.626a53a7.jpg": "/webportfolio/static/media/surveyform.626a53a7.jpg",
+    "static/media/techdocsite.ab2cc480.jpg": "/webportfolio/static/media/techdocsite.ab2cc480.jpg",
+    "static/media/timer.993380ed.jpg": "/webportfolio/static/media/timer.993380ed.jpg",
+    "static/media/tributesite.43299bd0.jpg": "/webportfolio/static/media/tributesite.43299bd0.jpg",
     "static/media/twitter.9bc1f75f.png": "/webportfolio/static/media/twitter.9bc1f75f.png"
   },
   "entrypoints": [
     "static/js/runtime-main.75357983.js",
     "static/js/2.273e6699.chunk.js",
-    "static/css/main.ff46bac1.chunk.css",
-    "static/js/main.bb4b0adf.chunk.js"
+    "static/css/main.063cf7a2.chunk.css",
+    "static/js/main.e2865408.chunk.js"
   ]
 }
