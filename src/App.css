@@ -54,7 +54,7 @@ body::-webkit-scrollbar-thumb:hover, #pageCell::-webkit-scrollbar-thumb:hover, #
   }
   
 }
-@media only screen and (max-width: 360px) {
+@media only screen and (max-width: 545px) {
   /* make all elements font relatively smaller */
   * {
     font-size: 0.8rem;
@@ -63,25 +63,114 @@ body::-webkit-scrollbar-thumb:hover, #pageCell::-webkit-scrollbar-thumb:hover, #
   .nav-button {
     font-size: 0.8rem;
   }
+  
+  /* bestWork */
   .scene {
-    transform: scale(0.5)
+    width: 350px !important;
+    height: 161.6px !important;
+  }
+  .cube-cell{
+    width: 317px !important;
+    height: 139.3px !important;
+  }
+  .proj{
+    width: 317px !important;
+    height: 139.3px !important;
   }
   #bestWork-link {
     font-size: 0.5rem;
   }
+  /* work */
+  .workItem {
+    width: 317px !important;
+  }
+  .proj-image{
+    width: 317px !important;
+    height: 139.3px !important;
+  }
+  /* resume */
+  #resume{
+    /* move the div below #navBar */
+    align-items: stretch !important;
+    gap: 5% !important;
+  }
+  #resume-side{
+    width: 25% !important;
+    min-height: auto !important;
+    align-self: flex-start !important;
+    align-items: flex-start !important;
+    justify-content: flex-start !important;
+    /* justify-content: center; */
+    padding-top: 50px !important;
+    padding-left: 0px !important;
+    text-align: left !important;
+  }
+  #resume-main{
+    width: 75% !important;
+    height: fit-content !important;
+    align-items: flex-start !important;
+    justify-content: flex-start !important;
+    padding-top: 40px !important;
+    text-align: justify !important;
+    /* border-left: 1px inset var(--accent-green); */
+  }
+  .icon-link{
+    display: none !important;
+    width: 20px !important;
+    height: 20px !important;
+    transition: all linear 200ms !important;
+  }
+  .icon-link:hover{
+    width:25px !important;
+    height: 25px !important;
+  }
+}
+@media only screen and (max-width: 800px) {
+  * {
+    font-size: 0.9rem;
+    scale: 0.8;
+  }
   
-  #work{
-    font-size: 0.5rem;
-    transform: scale3d(0.7, 0.7, 0.7);
+  #bestWork-link {
+    font-size: 0.7rem;
   }
-  .workItem .workItem-description{
-    width: 50%;
-  }
-  .workItem:hover{
-    transform: scale3d(0.6, 0.6, 0.6);
-  }
-
   
+  /* resume */
+  #resume{
+    /* move the div below #navBar */
+    align-items: stretch !important;
+    gap: 5% !important;
+  }
+  #resume-side{
+    width: 25% !important;
+    min-height: auto !important;
+    align-self: flex-start !important;
+    align-items: flex-start !important;
+    justify-content: flex-start !important;
+    /* justify-content: center; */
+    padding-top: 50px !important;
+    padding-left: 0px !important;
+    text-align: left !important;
+  }
+  #resume-main{
+    width: 75% !important;
+    height: fit-content !important;
+    align-items: flex-start !important;
+    justify-content: flex-start !important;
+    padding-top: 40px !important;
+    text-align: justify !important;
+    /* border-left: 1px inset var(--accent-green); */
+  }
+  .icon-link{
+    display: none !important;
+    width: 20px !important;
+    height: 20px !important;
+    transition: all linear 200ms !important;
+  }
+  .icon-link:hover{
+    width:25px !important;
+    height: 25px !important;
+  }
 }
 /* Base Containers */
 #root {
@@ -308,7 +397,7 @@ body{
   border-radius: 5px;
 }
 
-#proj {
+.proj {
   backface-visibility: hidden;
   border-radius: 5px;
   width: 660px;
@@ -446,26 +535,28 @@ body{
   display: flex;
   flex-direction: column;
   width: 25%;
-  min-height: 100vh;
-  align-items: left;
-  justify-content: left;
-  padding: 2% 2% 2% 2%;
+  min-height: stretch;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  text-align: left;
 }
 #resume-side-header, #resume-education, #personal-info{
   border-bottom: 1px inset var(--accent-red);
+  width: 100%;
 }
 #phone-num, #email-info, #social-media, #location{
   display: flex;
   align-items: center;
   justify-content: left;
-  gap: 2%;
+  gap: 2px;
 }
-.icon-link{
+.icon-link, .icon-linkA{
   width: 40px;
   height: 40px;
   transition: all linear 200ms;
 }
-.icon-link:hover{
+.icon-link:hover, .icon-linkA:hover{
   width:55px;
   height: 55px;
 }
@@ -477,6 +568,7 @@ body{
   justify-content: center;
   align-items: left;
   padding: 2% 2% 2% 2%;
+  text-align: left;
   /* border-left: 1px inset var(--accent-green); */
 }
 /* Resume Face */

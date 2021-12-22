@@ -197,7 +197,7 @@ let glowStyle = {
       <div id='navBar'>
                <ul id='navList'>
                   <li>
-                      <img id='mylogo' width='128' height='128' src={klogo} alt='klogo' id='klogo' onClick={handleAbout}/>
+                      <img id='mylogo' width='100' height='100' src={klogo} alt='klogo' id='klogo' onClick={handleAbout}/>
                   </li>
                   <li>
                       <button className='nav-button' onClick={handleAbout} style={navGlow(state, 'about')} id='Babout'>About</button>
@@ -236,13 +236,13 @@ const About = () => {
                 <h4>You can reach out on any of the platforms below and see other work on Githhub.</h4>
                 <div id='about-socials'>
                     <a href='https://github.com/alp-kudzai'>
-                        <img className='icon-link' alt='' width='40px' height='40px' src={github}/>
+                        <img className='icon-linkA' alt='' width='40px' height='40px' src={github}/>
                     </a>
                     <a href='https://twitter.com/KudzaiAlpha'>
-                        <img className='icon-link' alt='' width='40px' height='40px' src={twitter}/>
+                        <img className='icon-linkA' alt='' width='40px' height='40px' src={twitter}/>
                     </a>
                     <a href='https://www.linkedin.com/in/kudzai-matsika-117698182/'>
-                        <img className='icon-link' alt='' width='40px' height='40px' src={linkedin}/>
+                        <img className='icon-linkA' alt='' width='40px' height='40px' src={linkedin}/>
                     </a>
                 </div>
             </div>
@@ -281,10 +281,10 @@ const BestWork = () => {
       <div id='bestWork'>
           <div className='scene'>
               <div className='cube' style={styles}>
-                  <div className='cube-cell'><img alt='' id='proj' src={state.bestWork[0]}/></div>
-                  <div className='cube-cell'><img alt='' id='proj' src={state.bestWork[1]}/></div>
-                  <div className='cube-cell'><img alt='' id='proj' src={state.bestWork[2]}/></div>
-                  <div className='cube-cell'><img alt='' id='proj' src={state.bestWork[3]}/></div>
+                  <div className='cube-cell'><img alt='' className='proj' src={state.bestWork[0]}/></div>
+                  <div className='cube-cell'><img alt='' className='proj' src={state.bestWork[1]}/></div>
+                  <div className='cube-cell'><img alt='' className='proj' src={state.bestWork[2]}/></div>
+                  <div className='cube-cell'><img alt='' className='proj' src={state.bestWork[3]}/></div>
               </div>
           </div>
           <div id='buttonWrapper'>
