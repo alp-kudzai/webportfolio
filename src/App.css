@@ -78,7 +78,7 @@ body::-webkit-scrollbar-thumb:hover, #pageCell::-webkit-scrollbar-thumb:hover, #
     height: 139.3px !important;
   }
   #bestWork-link {
-    font-size: 0.5rem;
+    font-size: 0.3rem !important;
   }
   /* work */
   .workItem {
