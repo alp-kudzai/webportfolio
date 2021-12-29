@@ -547,9 +547,17 @@ body{
 }
 #phone-num, #email-info, #social-media, #location{
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: left;
   gap: 2px;
+}
+#email-link{
+  color: var(--text-color);
+  transition: all ease-in-out 0.5s;
+}
+#email-link:hover {
+  text-shadow: 0 0 7px #cdcde1;
 }
 .icon-link, .icon-linkA{
   width: 40px;
@@ -559,6 +567,9 @@ body{
 .icon-link:hover, .icon-linkA:hover{
   width:55px;
   height: 55px;
+}
+.resume-list{
+  padding: 0;
 }
 #resume-main{
   display: flex;

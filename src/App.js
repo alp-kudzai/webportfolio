@@ -381,7 +381,7 @@ const Resume = () => {
                             </div>
                             <div id='email-info'>
                                 <img className='icon-link' alt='' src={emailImg} />
-                                <p>alpha.kudzai@gmail.com</p>
+                                <p><a id='email-link' target='_blank' href='alpha.kudzai@gmail.com'>Email</a></p>
                             </div>
                             <div id='social-media'>
                                 <a className='resume-link' rel='noreferrer' target='_blank' href='https://www.linkedin.com/in/kudzai-matsika-117698182/'>
@@ -400,7 +400,7 @@ const Resume = () => {
                 <div id='resume-skills'>
                     <h3>Hard Skills</h3>
                     <div id='hardSkills-text'>
-                    <ul id='resume-list'>
+                    <ul className='resume-list'>
                         <li>HTML   <img alt='rating' src={star4} width='51px' height='10px'/></li>
                         <li>CSS   <img alt='rating' src={star3} width='51px' height='10px'/></li>
                         <li>JavaScript   <img alt='rating' src={star3} width='51px' height='10px'/></li>
@@ -409,7 +409,7 @@ const Resume = () => {
                     </div>
                     <h3>Soft Skills</h3>
                     <div id='softSkills-text'>
-                    <ul id='resume-list'>
+                    <ul className='resume-list'>
                         <li>Teamwork</li>
                         <li>Problem Solving</li>
                         <li>Adaptability</li>
