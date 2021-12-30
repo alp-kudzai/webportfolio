@@ -552,6 +552,7 @@ body{
   justify-content: left;
   gap: 2px;
 }
+
 #email-link{
   color: var(--text-color);
   transition: all ease-in-out 0.5s;

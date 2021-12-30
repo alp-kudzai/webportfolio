@@ -381,7 +381,8 @@ const Resume = () => {
                             </div>
                             <div id='email-info'>
                                 <img className='icon-link' alt='' src={emailImg} />
-                                <p><a id='email-link' target='_blank' href='alpha.kudzai@gmail.com'>Email</a></p>
+                                <p><a id='email-link' target='_blank' 
+                                rel='noreferrer' href='mailto:alpha.kudzai@gmail.com' >Email</a></p>
                             </div>
                             <div id='social-media'>
                                 <a className='resume-link' rel='noreferrer' target='_blank' href='https://www.linkedin.com/in/kudzai-matsika-117698182/'>
