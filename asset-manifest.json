@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/webportfolio/static/css/main.b9b4163a.chunk.css",
-    "main.js": "/webportfolio/static/js/main.ff0792da.chunk.js",
-    "main.js.map": "/webportfolio/static/js/main.ff0792da.chunk.js.map",
-    "runtime-main.js": "/webportfolio/static/js/runtime-main.75357983.js",
-    "runtime-main.js.map": "/webportfolio/static/js/runtime-main.75357983.js.map",
-    "static/js/2.273e6699.chunk.js": "/webportfolio/static/js/2.273e6699.chunk.js",
-    "static/js/2.273e6699.chunk.js.map": "/webportfolio/static/js/2.273e6699.chunk.js.map",
-    "static/js/3.81eb1588.chunk.js": "/webportfolio/static/js/3.81eb1588.chunk.js",
-    "static/js/3.81eb1588.chunk.js.map": "/webportfolio/static/js/3.81eb1588.chunk.js.map",
+    "main.js": "/webportfolio/static/js/main.182b6fe9.chunk.js",
+    "main.js.map": "/webportfolio/static/js/main.182b6fe9.chunk.js.map",
+    "runtime-main.js": "/webportfolio/static/js/runtime-main.2dc44796.js",
+    "runtime-main.js.map": "/webportfolio/static/js/runtime-main.2dc44796.js.map",
+    "static/js/2.4767dfa0.chunk.js": "/webportfolio/static/js/2.4767dfa0.chunk.js",
+    "static/js/2.4767dfa0.chunk.js.map": "/webportfolio/static/js/2.4767dfa0.chunk.js.map",
+    "static/js/3.ff494d9d.chunk.js": "/webportfolio/static/js/3.ff494d9d.chunk.js",
+    "static/js/3.ff494d9d.chunk.js.map": "/webportfolio/static/js/3.ff494d9d.chunk.js.map",
     "index.html": "/webportfolio/index.html",
     "static/css/main.b9b4163a.chunk.css.map": "/webportfolio/static/css/main.b9b4163a.chunk.css.map",
-    "static/js/2.273e6699.chunk.js.LICENSE.txt": "/webportfolio/static/js/2.273e6699.chunk.js.LICENSE.txt",
+    "static/js/2.4767dfa0.chunk.js.LICENSE.txt": "/webportfolio/static/js/2.4767dfa0.chunk.js.LICENSE.txt",
     "static/media/drummachine.22e1e8d7.jpg": "/webportfolio/static/media/drummachine.22e1e8d7.jpg",
     "static/media/github.44eee0c4.png": "/webportfolio/static/media/github.44eee0c4.png",
     "static/media/klogo.75c40a35.svg": "/webportfolio/static/media/klogo.75c40a35.svg",
@@ -28,9 +28,9 @@
     "static/media/twitter.9bc1f75f.png": "/webportfolio/static/media/twitter.9bc1f75f.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.75357983.js",
-    "static/js/2.273e6699.chunk.js",
+    "static/js/runtime-main.2dc44796.js",
+    "static/js/2.4767dfa0.chunk.js",
     "static/css/main.b9b4163a.chunk.css",
-    "static/js/main.ff0792da.chunk.js"
+    "static/js/main.182b6fe9.chunk.js"
   ]
 }
