@@ -197,7 +197,7 @@ let glowStyle = {
       <div id='navBar'>
                <ul id='navList'>
                   <li>
-                      <img id='mylogo' width='100' height='100' src={klogo} alt='klogo' id='klogo' onClick={handleAbout}/>
+                      <img id='mylogo' width='100' height='100' src={klogo} alt='klogo' onClick={handleAbout}/>
                   </li>
                   <li>
                       <button className='nav-button' onClick={handleAbout} style={navGlow(state, 'about')} id='Babout'>About</button>
@@ -431,7 +431,7 @@ const Resume = () => {
                             <li>Started a small burger business during the latter part of the pandemic due to income uncertainty</li>
                             <li>This was also when I pivoted from Python to Javascript as the job prospects are greater</li>
                         </ul>
-                        <h4>2018-2019</h4>
+                        <h4>2017-2019</h4>
                         <ul id='resume-list'>
                             <li>Worked as an assistant for an Environmental, Health and Safety business, Simeka SHEQ.</li>
                             <li>I proof read various reports including EIAs and BAR when doing enivonmental work</li>
@@ -457,10 +457,10 @@ const Resume = () => {
                     <h3>Additional Information</h3>
                     <div id='resume-infoText'>
                         <p>
-                            I did not finish my Political Sciences degree because I was not performing well. I had depression and I was highly anxious about my future. I realised that I was doing a disservice to myself and my family by continuing as my mother had lost her job, so I dropped out.
+                            I did not complete my degree in Political Science at U.P because of finances hence me applying to UNISA in the hopes of getting a degree in Politics, Economics and Philosophy.
                         </p>
                         <p>
-                            I am Zimbabwean and a degree in Politics, Philosophy and Economics is not viable. I realise now that one of the sources of my anxiety was a lack of intellectual stimulation.
+                            I can safely say that I made an error in pursuing a degree in the Arts because I am a more analytical than creative.
                             I have always been interested in tech and I can remember tinkering with broken toy motors and building smaller toys with the broken parts. That is why I pivoted into programming.
                         </p>
                         <p>
