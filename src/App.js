@@ -278,29 +278,33 @@ const BestWork = () => {
   }
   
   return (
-      <div id='bestWork'>
-          <div className='scene'>
-              <div className='cube' style={styles}>
-                  <div className='cube-cell'><img alt='' className='proj' src={state.bestWork[0]}/></div>
-                  <div className='cube-cell'><img alt='' className='proj' src={state.bestWork[1]}/></div>
-                  <div className='cube-cell'><img alt='' className='proj' src={state.bestWork[2]}/></div>
-                  <div className='cube-cell'><img alt='' className='proj' src={state.bestWork[3]}/></div>
-              </div>
-          </div>
-          <div id='buttonWrapper'>
-              <button className='previous-button' onClick={handlePrev}>&lt;</button>
-              <CSSTransition
-                  in={inBestWork}
-                  timeout={500}
-                  classNames='fade'
-                  mountOnEnter
-                  unmountOnExit
-                  >
-                      <a id='bestWork-link' target='_blank' rel='noreferrer' key='animateLink' href={state.bestWorkLinks[state.workIndex]}>{state.bestWorkCurrent}</a>
-              </CSSTransition>
-              <button className='next-button' onClick={handleNext}>&gt;</button>
-          </div>
+      <div>
+          <h1>BUG HUNTING...</h1>
+          <p>Page will be updated soon</p>
       </div>
+//       <div id='bestWork'>
+//           <div className='scene'>
+//               <div className='cube' style={styles}>
+//                   <div className='cube-cell'><img alt='' className='proj' src={state.bestWork[0]}/></div>
+//                   <div className='cube-cell'><img alt='' className='proj' src={state.bestWork[1]}/></div>
+//                   <div className='cube-cell'><img alt='' className='proj' src={state.bestWork[2]}/></div>
+//                   <div className='cube-cell'><img alt='' className='proj' src={state.bestWork[3]}/></div>
+//               </div>
+//           </div>
+//           <div id='buttonWrapper'>
+//               <button className='previous-button' onClick={handlePrev}>&lt;</button>
+//               <CSSTransition
+//                   in={inBestWork}
+//                   timeout={500}
+//                   classNames='fade'
+//                   mountOnEnter
+//                   unmountOnExit
+//                   >
+//                       <a id='bestWork-link' target='_blank' rel='noreferrer' key='animateLink' href={state.bestWorkLinks[state.workIndex]}>{state.bestWorkCurrent}</a>
+//               </CSSTransition>
+//               <button className='next-button' onClick={handleNext}>&gt;</button>
+//           </div>
+//       </div>
   )
 }
 
