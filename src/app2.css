@@ -981,6 +981,7 @@ body {
         animation: fadeIn 5s ease-in;
     }
     #about-socials{
+        margin-top: 5px;
         width: 80%;
         display: flex;
         justify-content: space-evenly;
@@ -1137,6 +1138,10 @@ body {
         width: 80%;
         padding: 0px 10px;
         color: white;
+    }
+    #resume-interests{
+        width: 100%;
+        text-align: left;
     }
     .resume-main-header{
         width: 100%;

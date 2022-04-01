@@ -215,10 +215,9 @@ const Resume =() => {
                     <div id='resumeInt-text'>
                     <ul className='resume-list'>
                         <li>Playing guitar and bass</li>
-                        <li>Watching motorsport particularly F1</li>
+                        <li>Watching Motorsport</li>
                         <li>Exercising</li>
                         <li>Gaming</li>
-                        <li>Cooking</li>
                     </ul>
                     </div>
                 </div>
@@ -257,7 +256,7 @@ const Footer = () => {
                 </a>
             </div>
             <p id='footer-text'>
-               Copyright &copy; {new Date().getFullYear()} Kudzai Matsika
+               All Rights Reserved &copy; {new Date().getFullYear()} Kudzai Matsika
             </p>
         </div>
     )
