@@ -1,9 +1,10 @@
 //images
 import klogo from './klogo.svg'
 import oldPortfolio from './portfoliosite.jpg'
-import productLpage from './productpage.jpg'
+// import productLpage from './productpage.jpg'
 import surveyForm from './surveyform.jpg'
 import timerSite from './timer.jpg'
+import weatherSite from './weather.png'
 import phone from './phone.png'
 import emailImg from './email.png'
 import github from './github.png'
@@ -95,25 +96,25 @@ const Work = () => {
                         <div className='work-slide' id='slide-1'>
                             <img alt='#' src={oldPortfolio} className='workImg'/>
                             <div className='work-slide-text'>
-                                <h3><a className='work-link' href='https://codepen.io/alp-kudzai/pen/MWopxXj'>Previous Portfolio</a></h3>
+                                <h3><a className='work-link' target='_blank' href='https://codepen.io/alp-kudzai/pen/MWopxXj'>Previous Portfolio</a></h3>
                             </div>
                         </div>
                         <div className='work-slide' id='slide-2'>
-                            <img alt='#' src={productLpage} className='workImg'/>
+                            <img alt='#' src={weatherSite} className='workImg'/>
                             <div className='work-slide-text'>
-                                <h3><a className='work-link' href='https://codepen.io/alp-kudzai/pen/XWgNLPq'>Mock Product Site</a></h3>
+                                <h3><a className='work-link' target='_blank' href='https://alp-kudzai.github.io/weather/'>Weather Site</a></h3>
                             </div>
                         </div>
                         <div className='work-slide' id='slide-3'>
                             <img alt='#' src={surveyForm} className='workImg'/>
                             <div className='work-slide-text'>
-                                <h3><a className='work-link' href='https://codepen.io/alp-kudzai/pen/NWgRgvp'>Mock Survey Form</a></h3>
+                                <h3><a className='work-link' target='_blank' href='https://codepen.io/alp-kudzai/pen/NWgRgvp'>Mock Survey Form</a></h3>
                             </div>
                         </div>
                         <div className='work-slide' id='slide-4'>
                             <img alt='#' src={timerSite} className='workImg'/>
                             <div className='work-slide-text'>
-                                <h3><a className='work-link' href='https://codepen.io/alp-kudzai/pen/XWaPrpJ'>25 + 5 React Timer</a></h3>
+                                <h3><a className='work-link' target='_blank' href='https://codepen.io/alp-kudzai/pen/XWaPrpJ'>25 + 5 React Timer</a></h3>
                             </div>
                         </div>
                     </div>
