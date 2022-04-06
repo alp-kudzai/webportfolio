@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/webportfolio/static/css/main.b5a69fb7.chunk.css",
-    "main.js": "/webportfolio/static/js/main.4adca2e3.chunk.js",
-    "main.js.map": "/webportfolio/static/js/main.4adca2e3.chunk.js.map",
+    "main.js": "/webportfolio/static/js/main.7d1a35c1.chunk.js",
+    "main.js.map": "/webportfolio/static/js/main.7d1a35c1.chunk.js.map",
     "runtime-main.js": "/webportfolio/static/js/runtime-main.b912145b.js",
     "runtime-main.js.map": "/webportfolio/static/js/runtime-main.b912145b.js.map",
     "static/js/2.a806f82c.chunk.js": "/webportfolio/static/js/2.a806f82c.chunk.js",
@@ -15,15 +15,15 @@
     "static/media/app2.css": "/webportfolio/static/media/thingy1.bffcdd75.jpg",
     "static/media/klogo.75c40a35.svg": "/webportfolio/static/media/klogo.75c40a35.svg",
     "static/media/portfoliosite.82280f7f.jpg": "/webportfolio/static/media/portfoliosite.82280f7f.jpg",
-    "static/media/productpage.48f890b1.jpg": "/webportfolio/static/media/productpage.48f890b1.jpg",
     "static/media/surveyform.626a53a7.jpg": "/webportfolio/static/media/surveyform.626a53a7.jpg",
     "static/media/timer.993380ed.jpg": "/webportfolio/static/media/timer.993380ed.jpg",
-    "static/media/twitter.a785d335.png": "/webportfolio/static/media/twitter.a785d335.png"
+    "static/media/twitter.a785d335.png": "/webportfolio/static/media/twitter.a785d335.png",
+    "static/media/weather.872d8537.png": "/webportfolio/static/media/weather.872d8537.png"
   },
   "entrypoints": [
     "static/js/runtime-main.b912145b.js",
     "static/js/2.a806f82c.chunk.js",
     "static/css/main.b5a69fb7.chunk.css",
-    "static/js/main.4adca2e3.chunk.js"
+    "static/js/main.7d1a35c1.chunk.js"
   ]
 }
